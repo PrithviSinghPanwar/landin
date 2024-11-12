@@ -14,7 +14,7 @@ const Header=() =>{
   const getMenuStyle = (menuOpened) =>{
     if(document.documentElement.clientWidth <= 800)
     {
-      return {right: !menuOpened && "-100%"}
+      return {top: !menuOpened && "-100%"}
     }
   }
   return (
@@ -31,7 +31,7 @@ const Header=() =>{
               setMenuOpened(false)
             }}
             >
-            <div className="h-menu flexCenter"
+            <div className="h-menu flexCenter" 
             style={getMenuStyle(menuOpened)}
             >
               <Link to='#Residencies' smooth>Residencies</Link>
